@@ -1,0 +1,233 @@
+<!-- Projet final
+     Myriam Nguyen
+     07 novembre 2020 -->
+
+<!Doctype html>
+<html lang="fr">
+<head>
+    <title>Jeu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jeu.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jeu.html">Jeu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="personnages.html">Personnages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="savoirPlus.html">En savoir plus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jouer.html">Jouer au jeu</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Bannière -->
+<div class="container-fluid responsive parallaxBanniere text-center" id="banniere">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h1> Jeu </h1>
+        </div>
+    </div>
+</div>
+
+
+<!-- Couleur background -->
+<div class="container-fluid text-center" id="bgCouleur">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <!-- svg stroke 1 -->
+            <svg class="pt-4" height="80" width="200">
+                <g fill="none" stroke="#000000">
+                    <path  id="line" stroke-width="4" d="M5 40 l215 0"/>
+                </g>
+            </svg>
+
+
+            <!-- svg losange -->
+            <svg class="pt-3" width="50" height="50" id="losange">
+                <rect x="12" y="-10" width="20" height="20" transform="rotate(45)" fill="#000000"/>
+            </svg>
+
+            <!-- svg stroke 2 -->
+            <svg class="pt-4" height="80" width="200">
+                <g fill="none" stroke="#000000">
+                    <path  id="line" stroke-width="4" d="M5 40 l215 0"/>
+                </g>
+            </svg>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pt-3">
+                <h2> Qu'est-ce que c'est Hollow Knight ? </h2>
+                <p> Hollow Knight est un jeu indépendant de style Metroïdvania développé par trois gars <br>
+                    dans un studio australien du nom Team Cherry.</p>
+
+                <p>Ce jeu à pour but de combiner la concentration, rapidité et réflexion <br>
+                    dans plusieurs
+                    niveaux de difficultés à traver le jeu. Le jeu nous emmène dans <br>
+                    les profondeurs de la terre en incarnant un chevalier dépourvu d'inexpression <br>
+                    afin de sauver les vers prisonniés, mais aussi de  découvrir  <br>
+                    pourquoi il est déserte.
+                </p>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="img/pkit.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="imgFlou1">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="texte"> Lorsqu'on commence le jeu, peu d'indication ne nous est présentée. Il faudra <br>
+                alors avancer pas à pas dans l'aventure pour trouver des indices <br>
+                afin de mieux comprendre l'histoire et savoir où avancer. <br><br>
+
+                Ce jeu est vraiment bien conçu, mais non seulement il est magnique à regarder. Les couleurs <br>
+                sont belles et les designs sont harmonieux. La musique de fond est bien choisie en fonction <br>
+                du lieu que nous sommes.<br><br>
+
+                Ce jeu pourra nous faire jouer durant plusieurs heures, car comme rien ne nous est indiqué au <br>
+                départ ni aucune histoire présenté, on voudra progresser de plus en plus dans le jeu afin de <br>
+                pouvoir découvrir de nouvelles choses.
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid parallax2 h-100" id="bgImg">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <h2> Combat </h2>
+            <p> Comme nous incarnons un chevalier, son arme de combat est un petit épé
+                dite aiguillon qui ressemble à un clou. Il est possible de personnaliser
+                l'épé en déboursant au près des PNJ (personnage non jouable) marchands.<br><br>
+
+                Lors des combats, le chevalier à 5 points de vie et il peut utiliser des charmes qu'il acquérit à travers le jeu.
+                Les charmes sont comme des pouvoirs qui permettent au chevalier d'avoir comme un petit boost d'aide
+                sans nécessairement souvent utiliser l'aiguillon qui permet seulement de faire un coup un à la fois et ça utilise son jauge d'âme.
+                Avec les charmes, ça fait plus de dégât en vers les boss et créatures, mais ça aide à plus facilement tuer un boss.
+                Quand le chevalier perd une ou plusieurs vies, il peut recharger son énergie soit en allant s'assoir
+                aux bancs qui lui fait avoir tout son énergie complet ou soit avec une jauge d'âme qui lui pemet s'en recharger juste un peu.
+                Lorsque le jauge d'âge est vide, il ne peut plus l'utiliser. C'est pour cela qu'il faudra l'utiliser soigneusement et aux bons moments .
+            </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <h2 class="positionCentre">Progression</h2>
+            <p class="textgauche"> Pour progresser dans le jeu, il faudra avancer pas à pas afin d'acquéri des charmes, mais aussi des géodes.
+                Les géos se sont des points d'argents auxquels il est possible d'acheter plein de choses nécessaires au jeu, tel que des cartes,
+                clé, carte et plume et plusieurs autres choses.<br><br>
+
+                Il va arriver que lorsqu'on avance dans le jeu, il y aura certaines choses qui seront plus difficiles qu'à d'autres endroits
+                et si on perd tous son énergie, on devra recommencer au dernier point qu'on n'était en plus de perdre  tous ses géos.
+                Le mieux faudra vraiment faire attention, mais il est potssible de regagner facilement ses géos.
+            </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+            <img src="img/theKnight.png" alt="The knight">
+        </div>
+    </div>
+</div>
+
+<footer>
+
+    <div class="container-fluid text-center" id="icone">
+        <div class="row pt-10">
+
+            <div class="mo-fire">
+
+
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="100px" height="100px" viewBox="0 0 125 189.864" enable-background="new 0 0 125 189.864" xml:space="preserve">
+<path class="flame-main" fill="#F36E21" d="M76.553,186.09c0,0-10.178-2.976-15.325-8.226s-9.278-16.82-9.278-16.82s-0.241-6.647-4.136-18.465
+	c0,0,3.357,4.969,5.103,9.938c0,0-5.305-21.086,1.712-30.418c7.017-9.333,0.571-35.654-2.25-37.534c0,0,13.07,5.64,19.875,47.54
+	c6.806,41.899,16.831,45.301,6.088,53.985"/>
+                    <path class="flame-main one" fill="#F6891F" d="M61.693,122.257c4.117-15.4,12.097-14.487-11.589-60.872c0,0,32.016,10.223,52.601,63.123
+	c20.585,52.899-19.848,61.045-19.643,61.582c0.206,0.537-19.401-0.269-14.835-18.532S57.576,137.656,61.693,122.257z"/>
+                    <path class="flame-main two" fill="#FFD04A" d="M81.657,79.192c0,0,11.549,24.845,3.626,40.02c-7.924,15.175-21.126,41.899-0.425,64.998
+	C84.858,184.21,125.705,150.905,81.657,79.192z"/>
+                    <path class="flame-main three" fill="#FDBA16" d="M99.92,101.754c0,0-23.208,47.027-12.043,80.072c0,0,32.741-16.073,20.108-45.79
+	C95.354,106.319,99.92,114.108,99.92,101.754z"/>
+                    <path class="flame-main four" fill="#F36E21" d="M103.143,105.917c0,0,8.927,30.753-1.043,46.868c-9.969,16.115-14.799,29.041-14.799,29.041
+	S134.387,164.603,103.143,105.917z"/>
+                    <path class="flame-main five" fill="#FDBA16" d="M62.049,104.171c0,0-15.645,67.588,10.529,77.655C98.753,191.894,69.033,130.761,62.049,104.171z"/>
+                    <path class="flame" fill="#F36E21" d="M101.011,112.926c0,0,8.973,10.519,4.556,16.543C99.37,129.735,106.752,117.406,101.011,112.926z"/>
+                    <path class="flame one" fill="#F36E21" d="M55.592,126.854c0,0-3.819,13.29,2.699,16.945C64.038,141.48,55.907,132.263,55.592,126.854z"/>
+                    <path class="flame two" fill="#F36E21" d="M54.918,104.595c0,0-3.959,6.109-1.24,8.949C56.93,113.256,52.228,107.329,54.918,104.595z"/>
+</svg>
+
+
+            </div>
+
+
+            <div class="offset-lg-4"></div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1">
+                <a class="social" href="https://www.facebook.com/teamcherrygames"> <i class="fab fa-facebook fa-2x"></i> </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1">
+                <a href="https://www.instagram.com/teamcherrygames/"> <i class="fab fa-instagram fa-2x"></i> </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1">
+                <a class="social" href="https://www.youtube.com/c/TeamCherry/featured"> <i class="fab fa-youtube fa-2x"></i> </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1">
+                <a  class="social" href="https://twitter.com/TeamCherryGames"> <i class="fab fa-twitter fa-2x"></i> </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 offset-lg-4"></div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="basPage">&copy; Myriam Nguyen
+
+                <svg height="40" width="40">
+                    <circle cx="20" cy="35" r="3" fill="white"/>
+                </svg>
+
+                2020</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="anime-master/lib/anime.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+/* style.css
+   Myriam Nguyen
+   07 novembre 2020
+ */
+
+
+h2 {
+    color: #000000;
+    padding-top: 4rem;
+}
+
+
+p {
+    color: #000000;
+    font-size: 20px;
+    padding-top: 2rem;
+}
+
+footer {
+    background-color: #0B1018;
+    width: 100%;
+    height: 420px;
+}
+
+
+
+/* Navbar */
+ul .nav-item{
+    margin-left: 100px;
+}
+
+nav .navbar-nav li a{
+    color: #ffffff !important;
+    font-size: 20px;
+}
+
+.bg-light {
+    background-color: #1A174C !important;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.fa, .fas{
+    color: rgb(255,255,255);
+}
+
+
+/* Img banniere accueil */
+.responsive {
+    width: 100%;
+    height: 35rem;
+}
+
+/* Logo banniere */
+.logo {
+    text-align: center;
+    padding-top: 10rem;
+}
+
+#banniere {
+    background-image: url("img/banniereAccueil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+
+}
+
+
+/* carousel */
+.img-fluid {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Section vidép */
+.titre{
+    color: #ffffff;
+    padding-top: 5rem;
+    font-size: 25px;
+}
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 415px;
+    width: 50%;
+    position: relative;
+}
+
+
+
+/* Section aperçu pages */
+.button {
+    color: #ffffff;
+    padding-top: 2rem;
+}
+
+
+/* Effet parallax */
+.parallaxBanniere {
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding-top: 15rem;
+}
+.parallax2 {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+.h-100 {
+    height: 100% !important;
+}
+
+
+/* Bouton apeçu page */
+.box-1 {
+    margin-top: 2rem;
+}
+
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 130px;
+    cursor: pointer;
+}
+
+.btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.btn-one span {
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.btn-one:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+
+
+
+.basPage {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Lien icône réseaux sociaux */
+a {
+    color: #ffffff;
+}
+
+.fab {
+    margin-top: 17rem;
+}
+
+#icone {
+    color: #ffffff;
+}
+
+
+
+/* Bg couleur */
+#bgCouleur {
+    background-color: #AEDCFF;
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+}
+
+#bgColor {
+    width: 100%;
+    height: 500px;
+    padding-top: 5rem;
+    background-color: #1B2B47;
+}
+
+
+
+#imgFlou2 {
+    background-image: url("img/flouAccueil3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 45rem;
+}
+
+
+
+#bgImg {
+    background-image: url("img/imageAccueil2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 45rem;
+}
+
+
+/* SVG */
+#losange {
+    margin-left: 10px;
+}
+
+
+
+
+body {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+/* animation feu */
+.mo-fire {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left:50%;
+    margin-left: -100px;
+    top: 100px;
+}
+.mo-fire svg {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+.flame {
+    animation-name: flamefly;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    transform-origin: 50% 50% 0;
+}
+.flame.one {
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.flame3.two{
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.flame-main {
+    animation-name: flameWobble;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.flame-main.one {
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+.flame-main.two {
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.flame-main.three {
+    animation-duration: 2.1s;
+    animation-delay: 3s;
+}
+.flame-main.four {
+    animation-duration: 3.2s;
+    animation-delay: 4s;
+}
+.flame-main.five {
+    animation-duration: 2.5s;
+    animation-delay: 5s;
+}
+@keyframes flameWobble {
+    50% {
+        transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+    }
+}
+@keyframes flamefly {
+    0% {
+        transform: translate(0) rotate(180deg);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-20px, -100px) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+#Layer_1 {
+    margin-top: 170rem;
+    text-align: center;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+    #Layer_1 {
+        margin-top: 190rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #banniere {
+        background-image: url("img/mediaQueries767.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        background-color: #0B1018;
+        width: 100%;
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #bgColor {
+        width: 100%;
+        height: 400px;
+        padding-top: 5rem;
+        background-color: #1B2B47;
+    }
+}

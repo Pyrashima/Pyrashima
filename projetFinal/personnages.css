@@ -1,0 +1,285 @@
+/* style.css
+   Myriam Nguyen
+   07 novembre 2020
+ */
+
+@font-face {
+    font-family: Naishila Dancing Script, cursive;
+    src: url("naishila_dancing_script/Naishila Dancing Script.ttf");
+}
+
+h1 {
+    font-family: Naishila Dancing Script, cursive;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+
+h2 {
+    color: #ffffff;
+    font-family: Naishila Dancing Script, cursive;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: Naishila Dancing Script, cursive;
+    text-align: center;
+}
+
+/* Navbar */
+ul .nav-item{
+    margin-left: 100px;
+}
+
+nav .navbar-nav li a{
+    color: #ffffff !important;
+    font-size: 20px;
+}
+
+.bg-light {
+    background-color: #7C112B !important;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.fa, .fas{
+    color: rgb(255,255,255);
+}
+
+
+#banniere {
+    background-image: url("img/bannerPerso.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+
+/* Effet parallax */
+.parallaxBanniere {
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+
+/* Bg couleur */
+#bgCouleur {
+    background-color: #C73357;
+    width: 100%;
+    height: 22rem;
+}
+
+
+p, .textgauche {
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.texte {
+    margin-top: 10rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.positionCentre {
+    text-align: left;
+    color: #ffffff;
+}
+
+
+#imgFlou1 {
+    background-image: url("img/imgPersoFlou.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 35rem;
+}
+
+
+.parallax2 {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+}
+.h-100 {
+    height: 100% !important;
+}
+
+
+#bgImg {
+    background-image: url("img/parallaxPagePerso.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 60rem;
+}
+
+footer {
+    background-color: #3D0916;
+    width: 100%;
+    height: 420px;
+}
+
+.basPage {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Lien icône réseaux sociaux */
+a {
+    color: #ffffff;
+}
+
+.fab {
+    margin-top: 17rem;
+}
+
+#icone {
+    color: #ffffff;
+}
+
+
+body {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+/* animation feu */
+.mo-fire {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left:50%;
+    margin-left: -100px;
+    top: 100px;
+}
+.mo-fire svg {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+.flame {
+    animation-name: flamefly;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    transform-origin: 50% 50% 0;
+}
+.flame.one {
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.flame3.two{
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.flame-main {
+    animation-name: flameWobble;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.flame-main.one {
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+.flame-main.two {
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.flame-main.three {
+    animation-duration: 2.1s;
+    animation-delay: 3s;
+}
+.flame-main.four {
+    animation-duration: 3.2s;
+    animation-delay: 4s;
+}
+.flame-main.five {
+    animation-duration: 2.5s;
+    animation-delay: 5s;
+}
+@keyframes flameWobble {
+    50% {
+        transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+    }
+}
+@keyframes flamefly {
+    0% {
+        transform: translate(0) rotate(180deg);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-20px, -100px) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+#Layer_1 {
+    margin-top: 142rem;
+    text-align: center;
+}
+
+
+#perso {
+    margin-left: 25rem;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+    #Layer_1 {
+        margin-top: 180rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #banniere {
+        background-image: url("img/mediaQueries767.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        background-color: #3D0916;
+        width: 100%;
+        height: 1300px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #imgFlou1{
+        height: 1180px;
+    }
+}
